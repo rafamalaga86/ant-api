@@ -1,0 +1,29 @@
+# Virtual Environment
+venv*
+
+# Sublime Text
+*.sublime*
+
+# Pycharm
+.idea/
+
+# Mac
+.DS_Store
+
+# Django gitignore
+*.egg-info
+*.pot
+*.py[co]
+staticfiles
+.env
+.tox/
+__pycache__
+MANIFEST
+dist/
+docs/_build/
+docs/locale/
+node_modules/
+tests/coverage_html/
+tests/.coverage
+build/
+tests/report/
