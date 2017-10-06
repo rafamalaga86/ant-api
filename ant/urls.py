@@ -11,7 +11,7 @@ from events import views
 
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
-router.register(r'users/(?P<userPk>[0-9]+)/events', views.EventViewSet),
+router.register(r'users/(?P<user_id>[0-9]+)/events', views.EventViewSet),
 
 
 # Wire up our API using automatic URL routing.
@@ -19,5 +19,5 @@ router.register(r'users/(?P<userPk>[0-9]+)/events', views.EventViewSet),
 urlpatterns = [
     url(r'^', include(router.urls)),
     url(r'^admin/', admin.site.urls),
-    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    url(r'^api-auth/', include('rest_framework.urls'))
 ]

@@ -25,7 +25,7 @@ SECRET_KEY = 'k6aen_gyu!nh@kyneoefycr-w1zi$1m@l80*as$b4ab8#$xc6g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://ant-event-reminder.herokuapp.com']
 
 
 # Application definition
@@ -122,6 +122,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
+
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 
 STATIC_URL = '/static/'
 

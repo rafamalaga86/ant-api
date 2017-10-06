@@ -1,0 +1,1 @@
+web: gunicorn ant.wsgi:application --log-file -
